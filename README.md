@@ -16,10 +16,10 @@ Here're some of the project's best features:
 
 <h2>🛠️ Installation Steps:</h2>
 
-<p>1. Make sure to set Ngrok in</p>
+<p>1. Download and Install Go (Windows)</p>
 
 ```
-%PATH%
+https://go.dev/doc/install
 ```
 
 <p>2. Install go libraries</p>
@@ -30,4 +30,10 @@ go get github.com/fatih/color
 
 ```
 go get github.com/logrusorgru/aurora/v3
+```
+
+<p>4. Set ngrok in Enviorment Variable path</p>
+
+```
+%PATH% 
 ```
