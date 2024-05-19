@@ -1,13 +1,6 @@
                               
 <h1 align="center" style="font-weight: bold;">MagicMerge💻</h1>
 
-<p align="center">
-<a href="#tech">Technologies</a>
-<a href="#started">Getting Started</a>
-<a href="#Feature">API Endpoints</a>
-<a href="#colab">Collaborators</a>
-<a href="#contribute">Contribute</a> 
-</p>
 
 
 <p align="center">MagicMerge is a sophisticated utility designed specifically for cybersecurity professionals and red team operators. It offers a powerful yet covert method for embedding and encrypting executables within images enabling secure payload delivery and execution in environments where discretion and evasion are paramount.</p>
