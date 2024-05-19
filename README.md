@@ -16,9 +16,11 @@
 <p align="center">
 <a href="https://github.com/ShaanCoding">📱 Visit this Project</a>
 </p>
- ## Features
+
 
 ![Product Screenshot](https://raw.githubusercontent.com/mrfr05t/MagicMerge/main/MagicMerge.png)
+
+ ## Features
 
 **Stealthy Embedding**
 - Description: MagicMerge allows for the embedding of executables directly within image files, creating an unobtrusive method of delivering payloads that bypasses common security measures.
