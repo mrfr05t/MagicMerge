@@ -7,7 +7,8 @@
 
 
 
-![Product Screenshot](https://raw.githubusercontent.com/mrfr05t/MagicMerge/main/MagicMerge.png)
+![Product Screenshot](https://raw.githubusercontent.com/mrfr05t/MagicMerge/main/screenshot.png)
+
 
  ## Features
 
