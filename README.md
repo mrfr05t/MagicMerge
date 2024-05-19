@@ -1,6 +1,6 @@
                               
 <h1 align="center" style="font-weight: bold;">MagicMerge💻</h1>
-<align="center">
+
 - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
   - [Built With](#built-with)
