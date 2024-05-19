@@ -4,7 +4,7 @@
 <p align="center">
 <a href="#tech">Technologies</a>
 <a href="#started">Getting Started</a>
-<a href="#routes">API Endpoints</a>
+<a href="#Feature">API Endpoints</a>
 <a href="#colab">Collaborators</a>
 <a href="#contribute">Contribute</a> 
 </p>
