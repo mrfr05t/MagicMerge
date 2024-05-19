@@ -10,7 +10,8 @@
 ![Product Screenshot](https://raw.githubusercontent.com/mrfr05t/MagicMerge/main/screenshot.png)
 
 
- ## Features
+
+<h2>🗳️ Features:</h2>
 
 **Stealthy Embedding**
 - Description: MagicMerge allows for the embedding of executables directly within image files, creating an unobtrusive method of delivering payloads that bypasses common security measures.
@@ -75,7 +76,7 @@ go get github.com/logrusorgru/aurora/v3
 go build -o magicmerge.exe .
 ```
 
-<h2>Usage Examples:</h2>
+<h2>ℹ️ Usage Examples:</h2>
 
 <p>1. Run with Ngrok and Payload from url.</p>
 
