@@ -1,7 +1,7 @@
                               
 <h1 align="center" style="font-weight: bold;">MagicMerge💻</h1>
 <p align="center">
-<a href="#-features">Features</a>
+<a href="#features">Features</a>
 <a href="#-installation-steps">Installation</a>
 <a href="#routes">API Endpoints</a>
 <a href="#colab">Collaborators</a>
