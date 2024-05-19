@@ -8,8 +8,8 @@
 
 Here're some of the project's best features:
 Stealthy Embedding
-•	Description: MagicMerge allows for the embedding of executables directly within image files, creating an unobtrusive method of delivering payloads that bypasses common security measures.
-•	Benefit: Increases operational success by evading detection from security systems that scan for suspicious binary formats.
+* •	Description: MagicMerge allows for the embedding of executables directly within image files, creating an unobtrusive method of delivering payloads that bypasses common security measures.
+* •	Benefit: Increases operational success by evading detection from security systems that scan for suspicious binary formats.
 Robust XOR Encryption
 •	Description: MagicMerge encrypts executables embedded within images using a dynamically generated 16-byte XOR key, ensuring robust protection against unauthorized access and analysis.
 •	Benefit: Maintains the integrity and confidentiality of the payload, protecting sensitive data from potential breaches.
