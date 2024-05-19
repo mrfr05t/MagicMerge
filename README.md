@@ -57,22 +57,40 @@
 https://go.dev/doc/install
 ```
 
-<p>2. Install go libraries</p>
+<p>2. Install support libraries</p>
 
 ```
 go get github.com/logrusorgru/aurora/v3
 ```
 
-<p>4. Set ngrok in Enviorment Variable path</p>
+<p>3. Set ngrok in Enviorment Variable path</p>
 
 ```
 %PATH% 
 ```
 
-<p>5. Comiplation Command:</p>
+<p>4. Comiplation Command:</p>
 
 ```
 go build -o magicmerge.exe .
 ```
 
+<h2>Usage Examples:</h2>
+
+<p>1. Run with Ngrok and Payload from url.</p>
+
+```
+https://go.dev/doc/install
+```
+
+magicmerge.exe -payload="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe" -url=true -ngrok=true
+```
+<p>1. Run with local go server and Payload from local storage.</p>
+
+```
+https://go.dev/doc/install
+```
+
+magicmerge.exe -payload="/payload.exe" -url=false -ngrok=false
+```
 
