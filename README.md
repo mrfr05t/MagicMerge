@@ -95,7 +95,7 @@ magicmerge.exe -payload="/payload.exe" -url=false -ngrok=false
 - Auto SSL Cert generate
 - Log File
 
-<h> Client code sample (C#): </h2>
+<h2>🗳️ Features:</h2>
 
 ```
  internal class Program
