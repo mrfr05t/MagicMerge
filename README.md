@@ -81,7 +81,7 @@ go build -o magicmerge.exe .
 <p>1. Run with Ngrok and Payload from url.</p>
 
 ```
-magicmerge.exe -payload="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe" -url=true -ngrok=true
+magicmerge.exe -payload="YourPayloadURL" -url=true -ngrok=true
 ```
 <p>1. Run with local go server and Payload from local storage.</p>
 
