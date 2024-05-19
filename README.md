@@ -49,3 +49,30 @@
 - Benefit: Adapts to varying scenarios easily, from centrally managed payloads that can be updated remotely to securely handled local files for restricted environments.
 
 
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Download and Install Go (Windows)</p>
+
+```
+https://go.dev/doc/install
+```
+
+<p>2. Install go libraries</p>
+
+```
+go get github.com/logrusorgru/aurora/v3
+```
+
+<p>4. Set ngrok in Enviorment Variable path</p>
+
+```
+%PATH% 
+```
+
+<p>5. Comiplation Command:</p>
+
+```
+go build -o magicmerge.exe .
+```
+
+
