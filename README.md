@@ -13,10 +13,6 @@
 <p align="center">MagicMerge is a sophisticated utility designed specifically for cybersecurity professionals and red team operators. It offers a powerful yet covert method for embedding and encrypting executables within images enabling secure payload delivery and execution in environments where discretion and evasion are paramount.</p>
 
 
-<p align="center">
-<a href="https://github.com/ShaanCoding">📱 Visit this Project</a>
-</p>
-
 
 ![Product Screenshot](https://raw.githubusercontent.com/mrfr05t/MagicMerge/main/MagicMerge.png)
 
