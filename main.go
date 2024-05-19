@@ -24,7 +24,7 @@ ___      ___       __       _______   __     ______   ___      ___   _______   _
 `
 
 var slogan = `
-A sophisticated utility designed specifically for cybersecurity professionals and red team operators. It offers a powerful yet covert method for embedding and encrypting executables within images, enabling secure payload delivery and execution in environments where discretion and evasion are paramount
+A sophisticated payload delivery server for cybersecurity professionals and red team operators. It offers a powerful yet covert method for embedding and encrypting executables within images, enabling secure payload delivery and execution in environments where discretion and evasion are paramount
 
 Build: Beta
 Version: 1.0.0
