@@ -18,7 +18,7 @@
 </p>
  ## Features
 
-![Product Screenshot](https://source.unsplash.com/random/1920x1080)
+![Product Screenshot](https://raw.githubusercontent.com/mrfr05t/MagicMerge/main/MagicMerge.png)
 
 **Stealthy Embedding**
 - Description: MagicMerge allows for the embedding of executables directly within image files, creating an unobtrusive method of delivering payloads that bypasses common security measures.
